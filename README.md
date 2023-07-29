@@ -1,48 +1,25 @@
-# 網頁切版直播班 Vite 範例
+# 2023 切版班南一組測試區
 
-## Node.js 版本
-  - 專案的 Node.js 版本需為 v16 以上
-  - 查看自己版本指令：`node -v`
+## 第一步：複製（Fork）專案
 
+## 第二步：Clone 至本地端
 
-## 指令列表
-- `npm install` - 初次下載該範例專案後，需要使用 npm install 來安裝套件
-- `npm run dev` - 執行開發模式
-  - 若沒有自動開啟瀏覽器，可嘗試手動在瀏覽器上輸入
-    `http://localhost:5173/<專案名稱>/pages/index.html`
-- `npm run build` - 執行編譯模式（不會開啟瀏覽器）
-- `npm ru deploy` - 自動化部署
+- 請注意是 clone 自己 fork 回來的 repo
 
-## 資料夾結構
-  - assets # 靜態資源放置處
-    - images # 圖片放置處
-    - scss # SCSS 的樣式放置處
+## 第三步：請先建立自己的開發者分支
 
-  - layout # ejs 模板放置處
-  - pages # 頁面放置處
+- git branch -dev-自己命名的名稱
+- git checkout -dev-自己命名的名稱
 
-- JavaScript 程式碼可寫在 main.js 檔案
+## 第四步：請創建一個自己的 html 檔案
 
-### 注意事項
-- 已將 pages 資料夾內的 index.html 預設為首頁，建議不要任意修改 index.html 的檔案名稱
-- .gitignore 檔案是用來忽略掉不該上傳到 GitHub 的檔案（例如 node_modules），請不要移除 .gitignore
+- 請至少在 pages 資料夾下建立一個自己命名的 html
+- 可以的話也在 assets/scss 資料夾創建和 html 同名的 scss 檔案，也可以直接寫樣式
+- 有做第二步者請記得在 all.scss 中引入
+- 此專案有使用 bootstrap 所以可以去 bs5 官網抓範例貼進自己的 html
 
-## 開發模式的監聽
-vite 專案執行開發模式 `npm run dev` 後即會自動監聽，不需要使用 `Live Sass Compiler` 的 `Watch SCSS` 功能
+## 第五步： Push 回你自己的專案
 
+## 第六步： 發 PR 給原作者
 
-## 部署 gh-pages 流程說明
-### Windows 版本
-1. 在 GitHub 建立一個新的 Repository
-
-2. 部署前請務必先將原始碼上傳到 GitHub Repository 也就是初始化 GitHub，因此通常第一步驟會在專案終端機輸入以下指令
-```cmd
-git init # 若已經初始化過就可以不用輸入
-git add .
-git commit -m 'first commit'
-git branch -M main
-git remote add origin [GitHub Repositories Url]
-git push -u origin main // 僅限第一次輸入，往後只需要輸入 git push
-```
-
-3. 初始化完畢後，執行 `npm run deploy` 指令進行自動化部署
+- 記得選 dev 分支
